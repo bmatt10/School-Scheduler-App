@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mybicycleshop4.ProductsActivity">
+    <item
+        android:id="@+id/sharing"
+        android:orderInCategory="100"
+        android:title="@string/sharing"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_course"
+        android:orderInCategory="100"
+        android:title="@string/delete_course"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetails">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="310dp"
+        android:layout_height="308dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="283dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Name" />
+
+                <EditText
+                    android:id="@+id/partName"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Math" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes:" />
+
+                <EditText
+                    android:id="@+id/partPrice"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Some notes" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:text="Course Start:" />
+
+                <EditText
+                    android:id="@+id/productEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="12/23/2020" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="NotifyAssessmentStart"
+                    android:text="Send Notification?" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="109dp"
+                    android:layout_height="20dp"
+                    android:text="Course End:" />
+
+                <EditText
+                    android:id="@+id/pickDate3"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:hint="12/23/2020" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="NotifyAssessmentEnd"
+                    android:text="Send Notification?" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:text="Course Mentor:" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Bob"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course Mentor Phone:" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="317-222-2222"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="6"
+                    android:hint="In Progress"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:text="Course Mentor Email:" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="bob@wgu.edu"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="367dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/associated_assessments"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/scrollview"
+            tools:listitem="@layout/assessment_list_item" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="addCourseFromScreen"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:onClick="addAssessment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

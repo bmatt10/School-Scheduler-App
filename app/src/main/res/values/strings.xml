@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enter">enter</string>
+    <string name="welcome_to_my_bicycle_shop">Welcome to my Bicycle Shop!</string>
+    <string name="delete">delete</string>
+    <string name="notifications">notifications</string>
+    <string name="sharing">sharing</string>
+    <string name="channel_name">channel</string>
+    <string name="channel_description">channel description</string>
+    <string name="save">Save</string>
+    <string name="welcome_to_wgu_scheduler_app" />
+    <string name="terms" />
+    <string name="courses" />
+    <string name="assessments" />
+    <string name="assessments2">Assessments</string>
+    <string name="courses2">Courses</string>
+    <string name="terms2">Terms</string>
+    <string name="product_name">Product Name</string>
+    <string name="unicycle">Unicycle</string>
+    <string name="term_name">Term Name</string>
+    <string name="term_1">Term 1</string>
+    <string name="term_end">Term End:</string>
+    <string name="term_start">Term Start:</string>
+    <string name="save2">Save</string>
+    <string name="assessment_name">Assessment Name</string>
+    <string name="math_test">Math Test</string>
+    <string name="assessment_date">Assessment Date</string>
+    <string name="start">Start</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="start2">Start</string>
+    <string name="set_notification_reminder">Set Notification Reminder</string>
+    <string name="set_notification">Set Notification</string>
+    <string name="delete_assessment">Delete Assessment</string>
+
+</resources>
